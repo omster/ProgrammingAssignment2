@@ -1,5 +1,5 @@
-## Put comments here that give an overall description of what your
-## functions do
+## function 1: create special matrix object capable of caching its own matrix inversion
+## function 2: resolve matrix inversion from special matrix object
 
 ## Takes an optional matrix parameter and returns an object with four functions: setMatrix, getMatrix, setInverse, getInverse
 
@@ -19,7 +19,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## takes a makeCacheMatrix object and returns it's inverse matrix if cached, otherwise sets & caches it's inverse matrix
+## takes a makeCacheMatrix object parameter and returns it's inverse matrix if cached, otherwise sets & caches it's inverse matrix
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
